@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 </head>
 <body>
     <header>
@@ -19,5 +21,52 @@
             </nav>
         </section>
     </header>
+
+    <main>
+        <section class="main-movie">
+            <h3 class="title">HARRY POTTER E AS RELIQUIAS DA MORTE</h3>
+            <p class="description">No final épico, a batalha entre as forças do bem e do mal no mundo da bruxaria toma proporções de uma guerra mundial. As apostas nunca foram tão altas e ninguém está a salvo. Mas é harry que pode ser convocado para fazer um derradeiro sacrifício, à medida que ele se aproxima cada vez mais do confronto final com Lorde Voldemort. Tudo termina aqui.</p>
+            <div class="buttons">
+                <button role="button" class="button"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                <button role="button" class="button"><i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES</button>
+            </div>
+        </section>
+
+        <section class="carousel-movies">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="resources/capa-hp-1.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-2.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-3.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-4.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-5.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-6.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-71.jpg" alt="Harry Potter"></div>
+                <div class="item"><img src="resources/capa-hp-72.jpg" alt="Harry Potter"></div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/e9433a366d.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
 </body>
 </html>
